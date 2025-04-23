@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  # Frontend service
+  cleanup:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
