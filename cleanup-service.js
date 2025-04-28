@@ -63,9 +63,9 @@ async function cleanOldApplications() {
 
 
 // Planification du nettoyage 2 fois par jour (à 00h et 12h)
-// cron.schedule('0 0,12 * * *', cleanOldApplications);
+cron.schedule('0 0,12 * * *', cleanOldApplications);
 
-cron.schedule('* * * * *', cleanOldApplications); // toutes les minutes
+//cron.schedule('* * * * *', cleanOldApplications); // toutes les minutes
 
 
 
