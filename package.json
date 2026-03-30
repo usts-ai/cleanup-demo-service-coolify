@@ -4,14 +4,13 @@
     "description": "Service de nettoyage des applications sur Coolify",
     "main": "cleanup-service.js",
     "dependencies": {
-      "axios": "^0.21.1",
-      "node-cron": "^3.0.0",
-      "dotenv": "^10.0.0"
+        "axios": "^1.14.0",
+        "dotenv": "^10.0.0",
+        "node-cron": "^3.0.0"
     },
     "scripts": {
-      "start": "node cleanup-service.js"
+        "start": "node cleanup-service.js"
     },
     "author": "USTS",
     "license": "ISC"
-  }
-  
+}
