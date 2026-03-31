@@ -137,7 +137,7 @@ async function testDeleteRepo(repoName) {
 }
 
 // Décommentez pour tester la suppression d'un repo spécifique:
-testDeleteRepo('473385');
+// testDeleteRepo('473385');
 
 // Planification du nettoyage 2 fois par jour (à 00h et 12h)
 cron.schedule('0 0,12 * * *', cleanOldApplications);
