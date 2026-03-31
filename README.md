@@ -29,8 +29,14 @@ Créez un fichier `.env` à la racine du projet :
 # URL de votre instance Coolify (ex: https://coolify.mondomaine.com)
 COOLIFY_URL=https://votre-coolify.com
 
-# Token API Coolify (Settings → API Tokens)
+# Token API Coolify (Profile → API Tokens)
 COOLIFY_TOKEN=votre_token_api_ici
+
+# Token GitHub Personal Access Token (Settings → Developer settings → Personal access tokens)
+GITHUB_TOKEN=votre_github_token_ici
+
+# (Optionnel) Organisation GitHub (défaut: usts-ai)
+GITHUB_ORG=usts-ai
 
 # (Optionnel) Nombre de jours avant suppression (défaut: 14)
 DAYS_BEFORE_DELETION=7
@@ -38,8 +44,15 @@ DAYS_BEFORE_DELETION=7
 
 **Comment obtenir votre token Coolify :**
 1. Connectez-vous à votre dashboard Coolify
-2. Allez dans **Settings** → **API Tokens**
-3. Créez un nouveau token avec les permissions sur les applications
+2. Cliquez sur votre **avatar/profil** en haut à droite
+3. Allez dans **Profile** → **API Tokens**
+4. Créez un nouveau token avec les permissions sur les applications
+
+**Comment obtenir votre token GitHub :**
+1. Connectez-vous à GitHub
+2. Allez dans **Settings** → **Developer settings** → **Personal access tokens** → **Tokens (classic)**
+3. Générez un nouveau token avec les scopes : `repo` (accès complet aux repos)
+4. Copiez le token (il ne s'affiche qu'une fois)
 
 ---
 
